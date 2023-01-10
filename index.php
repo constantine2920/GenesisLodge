@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,30 +188,26 @@ or feel free to leave a message in our general mailbox (Press '0') or use the fo
         </div>
         <div class="col-md-4 col-sm-4">
             <h2 class="text-center"> Information Request</h2>
-            <form id="ContactForm" class="contact100-form validate-form" action ="index.php"  method="post">
-                <div class="form-group">
-                    <label for="ContactName">Name</label>
-                    <input type="name" name="ContactName" class="form-control" id="ContactName" placeholder="John Doe">
-                    
-                </div>
-                <div class="form-group">
-                    <label for="Email">Email address</label>
-                    <input name="Email" type="email" class="form-control" id="Email" placeholder="name@example.com">
-                    
-                </div>
-                <div class="form-group">
-                    <label for="PhoneNumber">Phone Number</label>
-                    <input name="PhoneNumber" type="phone" class="form-control" id="PhoneNumber" placeholder="(000) 000 - 0000">
-                  </div>
-                  <div class="form-group">
-                    <label for="TextArea_Question">Question:</label>
-                    <textarea name="Question" class="form-control" id="TextArea_Question" rows="3"></textarea>
-                  </div>
-                  <div class="col-lg-12"> 
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </div>
-                  <br/>
-            </form>
+            <?php   echo "Form Submitted Successfully";   
+
+
+?>
+        
+<br/>
+<br/>
+Welcome <?php echo $_POST["ContactName"]; ?><br>
+Email:  <?php echo $_POST["Email"]; ?><br>
+Phone:  <?php echo $_POST["PhoneNumber"]; ?><br>
+Question:  <?php echo $_POST["Question"]; ?> <br>
+
+Email Sent to Genesis Lodge
+<?php 
+mail("constantine2920@hotmail.com","Request For Information: " + $_POST["ContactName"] ,
++
+" PhoneNumber: "+ $_POST["PhoneNumber"] +
+" Question:"+$_POST["Question"]);
+?>
+
             <br/>
         </div>
         <div class="col-md-3 col-sm-3">
@@ -219,17 +217,7 @@ or feel free to leave a message in our general mailbox (Press '0') or use the fo
 </div>
 <br/>
 <script>
-    function formSubmit() {
-      const UserName = document.getElementById("ContactName");
-      const Email = document.getElementById("Email");
-      const PhoneNumber = document.getElementById("PhoneNumber");
-      const Question = document.getElementById("TextArea_Question");
-      alert("UserName: " + UserName.value + " Email: " + Email.value+ " PhoneNumber: " + PhoneNumber.value +  " Question: " +Question.value );
-      
-        document.getElementById("ContactForm").submit();
-      
-      
-    }
+
 </script>
 </body>
 </html>
