@@ -1,0 +1,117 @@
+
+body{
+    background-color: #526477;
+}
+.ColumnHeader
+{
+    background-color: white;
+    border-radius: 25px;
+} 
+h2{
+    font-family: Garamond, Times, serif;
+    color: #3f658a;
+}
+li{
+    background-color: #1d5a74;
+} 
+li a:hover{
+    color:#5b899d;
+}
+nav{
+    background-color: #526477;
+    color: aquamarine;
+}
+.MainContent{
+    border-width: 0 10px;
+    border-style: solid;
+    border-color: #1d5a74;
+}
+.logo{
+        width: 80%;
+    }
+a{
+    color:white;
+}
+nav{
+    padding-left:10%;
+}
+p{
+    font-size: 1.25em;
+}
+ul{
+    font-size: 1.25em;
+}
+@media (max-width: 3840 ) {
+    nav{
+    padding-left: 35%;
+    }
+    .logo{
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    nav{
+    padding-left: 15%;
+    }
+    .logo{
+        width: 80%;
+    }
+}
+@media (max-width: 986px) {
+    nav{
+    padding-left: 15%;
+    }
+    .logo{
+       width: 80%;
+    }
+
+}
+@media (max-width: 820px) {
+    nav{
+        padding-left: 15%;
+    }
+    .logo{
+        width: 80%;
+    }
+
+}
+@media (max-width: 1020px) {
+    nav{
+    padding-left: 10%;
+    }
+    .logo{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    nav{
+    padding-left: 0%;
+    }
+    .logo{
+       width: 80%;
+    }
+}
+@media (min-width: 991px) {
+    nav{
+    padding-left: 5%;
+    }
+    .logo{
+       width: 80%;
+    }
+}
+@media (min-width: 768px) {
+    nav{
+    padding-left: 25%;
+    }
+    .logo{
+       width: 80%;
+    }
+}
+@media (min-width: 1020px) {
+    nav{
+    padding-left: 18%;
+    }
+    .logo{
+        width: 80%;
+    }
+}
